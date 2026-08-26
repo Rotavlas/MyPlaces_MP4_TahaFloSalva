@@ -1,0 +1,8 @@
+# Copiez ce fichier en `local.properties` et completez-le.
+# `local.properties` est ignore par git : il ne doit JAMAIS etre commite.
+
+# Chemin vers le SDK Android (renseigne automatiquement par Android Studio)
+sdk.dir=C\:\Users\<vous>\AppData\Local\Android\Sdk
+
+# Cle API Google Maps (console Google Cloud > Maps SDK for Android)
+MAPS_API_KEY=VOTRE_CLE_ICI

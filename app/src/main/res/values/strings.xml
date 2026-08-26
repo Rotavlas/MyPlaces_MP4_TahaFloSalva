@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">My Places</string>
+    <string name="map_screen_title">Mes Lieux</string>
+    <string name="add_place_title">Ajouter un lieu</string>
+    <string name="place_title_hint">Titre du lieu</string>
+    <string name="place_description_hint">Description / Souvenir</string>
+    <string name="select_emoji">Choisir un émoji</string>
+    <string name="take_photo">Prendre une photo</string>
+    <string name="gallery">Galerie</string>
+    <string name="save">Enregistrer</string>
+    <string name="cancel">Annuler</string>
+    <string name="export_journal">Exporter le journal</string>
+    <string name="import_journal">Importer des lieux</string>
+    <string name="biometric_title">Accès à My Places</string>
+    <string name="biometric_subtitle">Identifiez-vous pour accéder à votre journal</string>
+    <string name="biometric_cancel">Annuler</string>
+    <string name="address_loading">Récupération de l\'adresse…</string>
+    <string name="delete_place">Supprimer</string>
+    <string name="imported_from">Importé de : </string>
+    <string name="own_place">Mon lieu</string>
+</resources>

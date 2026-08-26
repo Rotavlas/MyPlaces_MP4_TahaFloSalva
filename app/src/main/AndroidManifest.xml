@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<<<<<<< HEAD
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Location -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <!-- Internet (Retrofit + Maps) -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- Camera -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-feature android:name="android.hardware.camera" android:required="false" />
+
+    <!-- Read/Write for photo export (Android < 10) -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="29" />
+
+    <!-- Biometric -->
+    <uses-permission android:name="android.permission.USE_BIOMETRIC" />
+    <uses-permission android:name="android.permission.USE_FINGERPRINT" />
+
+    <application
+        android:name=".MyPlacesApp"
+        android:allowBackup="true"
+=======
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Carte centree sur la position de l'utilisateur -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- Reverse geocoding via api-adresse.data.gouv.fr -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- Prise de photo -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <!-- Verrouillage biometrique -->
+    <uses-permission android:name="android.permission.USE_BIOMETRIC" />
+
+    <uses-feature android:name="android.hardware.camera.any" android:required="false" />
+    <uses-feature android:name="android.hardware.location.gps" android:required="false" />
+
+    <application
+        android:name=".MyPlacesApplication"
+        android:allowBackup="false"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="false"
+>>>>>>> 859272f7d4988ac43bda7adda16c7774745906ee
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+<<<<<<< HEAD
+        android:theme="@style/Theme.MyPlaces">
+=======
+        android:theme="@style/Theme.MyPlaces"
+        tools:targetApi="34">
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="${MAPS_API_KEY}" />
+>>>>>>> 859272f7d4988ac43bda7adda16c7774745906ee
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+<<<<<<< HEAD
+            android:theme="@style/Theme.MyPlaces">
+=======
+            android:label="@string/app_name"
+            android:theme="@style/Theme.MyPlaces"
+            android:windowSoftInputMode="adjustResize">
+>>>>>>> 859272f7d4988ac43bda7adda16c7774745906ee
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+<<<<<<< HEAD
+        <!-- FileProvider for sharing photo files -->
+=======
+        <!-- Expose les fichiers du stockage interne prive a l'appareil photo. -->
+>>>>>>> 859272f7d4988ac43bda7adda16c7774745906ee
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+<<<<<<< HEAD
+
+    </application>
+
+=======
+    </application>
+>>>>>>> 859272f7d4988ac43bda7adda16c7774745906ee
+</manifest>

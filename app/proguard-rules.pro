@@ -1,0 +1,5 @@
+-keep class com.myplaces.data.** { *; }
+-keep class com.google.gson.** { *; }
+-keepattributes Signature
+-keepattributes *Annotation*
+-dontwarn okhttp3.internal.platform.**
